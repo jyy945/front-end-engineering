@@ -1,9 +1,11 @@
 {
   "scripts": {
     "commit": "cz",
-    "test": "jest",
+    "test": "node ./scripts/jest.js",
+    "test:watch": "jest --watch",
     "package": "node ./scripts/package.js",
-    "prepare": "husky install config/.husky"
+    "prepare": "husky install config/.husky",
+    "pub": "lerna publish --no-push"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.4",
@@ -36,6 +38,7 @@
     "packages/**/*.js": [
       "eslint --fix",
       "prettier --write",
+      "jest --findRelatedTests",
       "git add"
     ]
   }

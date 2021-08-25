@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "allowJs": true,
+    "strict": false,
+    "target": "es5",
+    "declaration": true,
+    "noEmit": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./packages/*"]
+    }
+  },
+  "exclude": [
+    "packages/*/__tests__",
+    "stories",
+    "node_modules"
+  ]
+}

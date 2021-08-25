@@ -1,2 +1,7 @@
 node_modules
 .idea
+yarn-error.log
+lerna-debug.log
+lib
+webstorm.config.js
+coverage

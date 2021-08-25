@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.uat
+    image: 10.25.183.251:8888/base/checc-front-components
+    ports:
+      - 100:100
+    #volumes:
+     # - ./process.conf: /etc/nginx/conf.d/process.conf
+    restart: always
